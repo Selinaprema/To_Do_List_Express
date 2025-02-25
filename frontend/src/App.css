@@ -1,0 +1,248 @@
+/* General Styling for the Whole App */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  width: 100%;
+  max-width: 500px;
+  background-color: #5241a6;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 20px;
+}
+
+/* Header */
+h1 {
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+/* General Styling for the Welcome Page */
+.welcome-container {
+  font-family: "Arial", sans-serif;
+  background: #5241a6;
+
+  color: #ffffff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.welcome-container h1 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.welcome-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 15px;
+}
+
+/* Input container for Todo List */
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input {
+  flex-grow: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  margin-left: 10px;
+}
+
+button.add {
+  background-color: #4caf50;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Todo Counter */
+.todo-counter {
+  font-size: 16px;
+  color: #77c1fd;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+/* Todo Item Styles */
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+button.edit {
+  background-color: #ff9800;
+  color: white;
+  border-radius: 5px;
+}
+
+button.delete {
+  background-color: #f44336;
+  color: white;
+  border-radius: 5px;
+}
+
+button.completed {
+  background-color: #2196f3;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.open {
+  display: flex;
+}
+
+.modal-content {
+  background-color: #5241a6;
+  padding: 20px;
+  border-radius: 8px;
+  width: 320px;
+  max-width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.modal input {
+  width: 93%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+.modal button {
+  padding: 12px 20px;
+  background-color: #4caf50;
+  border-radius: 6px;
+  border: none;
+}
+
+.modal button.save {
+  background-color: #4caf50;
+  color: #ffffff;
+}
+
+.modal button.close {
+  background-color: #f44336;
+  color: #ffffff;
+}
+
+/* Logout Button */
+button.logout {
+  background-color: #ca87e4;
+  color: #ffffff;
+  border-radius: 6px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* Register and Login Pages Styling */
+.registration-page,
+.login-page {
+  font-size: 18px;
+  color: #5241a6;
+  margin: 20px;
+}
+
+.registration-page input,
+.login-page input {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+.registration-page button,
+.login-page button {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.registration-page button:hover,
+.login-page button:hover {
+  background-color: #45a049;
+}
+
+/* Protected Route (Todo List) Page */
+.todo-page {
+  font-size: 18px;
+  color: #5241a6;
+  padding: 20px;
+}
